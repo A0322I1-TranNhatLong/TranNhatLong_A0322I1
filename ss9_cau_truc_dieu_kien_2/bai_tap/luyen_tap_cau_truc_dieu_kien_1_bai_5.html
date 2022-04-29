@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a=parseInt(prompt("Điểm kiểm tra: "));
+    let b=parseInt(prompt("Điểm thi giữa kỳ: "));
+    let c=parseInt(prompt("Điểm thi cuối kỳ: "));
+    tongket= (a+b+c)/3;
+    if (tongket>=9.0){
+        alert("Hạng A");
+    } else if (tongket>=7.0&&tongket<9.0){
+        alert("Hạng B");
+    } else if (tongket>=5.0&&tongket<7.0){
+        alert("Hạng C");
+    }else{
+        alert("Hạng F");
+    }
+</script>
+</body>
+</html>

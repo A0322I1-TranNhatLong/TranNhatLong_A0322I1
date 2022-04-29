@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu lệnh switch-case</title>
+</head>
+<body>
+<input type="text" id="songay"><input type="button" value="tính số ngày" onclick="tinhsongay()"><br>
+<p id="hienthi"></p>
+<script>
+    function tinhsongay() {
+        let songay = document.getElementById("songay").value;
+        console.log(songay);
+        switch (songay.toString()) {
+            case "1":
+            case "3":
+            case "5":
+            case "7":
+            case "8":
+            case "10":
+            case "12":
+                if(songay){
+                    document.getElementById("hienthi").innerHTML = "Tháng "+ songay +" có 31 ngày";
+                }
+                break
+            case "2":
+                if(songay) {
+                    document.getElementById("hienthi").innerHTML = "Tháng " + songay + " có 28 hoặc 29 ngày";
+                }
+                break
+            case "4":
+            case "6":
+            case "9":
+            case "11":
+                if(songay) {
+                    document.getElementById("hienthi").innerHTML = "Tháng " + songay + " có 30 ngày";
+                }
+                break
+            default:
+                if(songay) {
+                    document.getElementById("hienthi").innerHTML = "Bạn chưa nhập tháng hoặc không đúng";
+                }
+        }
+    }
+</script>
+</body>
+</html>
