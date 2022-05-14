@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vẽ hình chữ nhật rỗng</title>
+</head>
+<body>
+<script>
+    let m = parseInt(prompt("Nhập chiều rộng: "));
+    let n = parseInt(prompt("Nhập chiều dài: "));
+    let a = " ";
+    for (let i=1;i<=m;i++){
+        for (let j = 1;j<=n;j++){
+            if (i == 1 || i == m){
+                document.write("<a style='color: red'>*</a>");
+            }else{
+                document.write("<a style='color: white'>*</a>");
+            }
+            if (j == 1 || j== n) {
+                document.write("<a style='color: red'>*</a>");
+            }
+        }
+        document.write("<br>");
+    }
+</script>
+</body>
+</html>
